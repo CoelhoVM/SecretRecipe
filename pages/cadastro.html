@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecretRecipe - Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cadastro.css">
+
+</head>
+
+<body>
+
+    <div>
+
+        <header>
+
+            <nav class="navbar bg-body-tertiary fixed-top"
+                style="display: flex; background-color: #fdf1d8 !important; padding: 1rem 1.5rem;  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);">
+
+                <div class="container-fluid">
+
+                    <button class="icones" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                        style="background-color: #fdf1d8;">
+                        <a id="menuIcon" class="fa fa-bars"></a>
+                    </button>
+
+                    <a href="index.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
+                            height="65%" width="65%"></a>
+
+                    <div class="nav-container">
+
+                        <nav class="nav-menu" id="navMenu">
+                            <a href="index.html">Home</a>
+                            <a href="sobre.html">Sobre nós</a>
+                            <a href="contato.html">Contato</a>
+                            <a href="contato.html">Receitas</a>
+                        </nav>
+
+                    </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+
+                        <div class="offcanvas-header">
+
+                            <a href="index.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
+                                    height="65%" width="65%"></a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sobre nós</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contato</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Recitas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/cadastro.html">Cadastrar-se</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="d-flex justify-content-center align-items-center min-vh-100 bg-light" style="margin-top: 100px;">
+            <form>
+                <div class="container">
+                    <div class="mx-auto bg-white p-4 rounded shadow" style="width: 600px;">
+                        <div class="mb-3">
+                            <label for="exampleEmaill" class="form-label">
+                                <h6>Cadastro</h6>
+                            </label><br>
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="visible-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="visible-addon">
+                            <input type="text" class="form-control d-none" placeholder="Hidden input"
+                                aria-label="Hidden input" aria-describedby="visible-addon">
+                        </div>
+
+                        <label for="exampleTitulo" class="form-label">
+                            <h6>Informações do Perfil</h6>
+                        </label><br>
+                        <label for="exampleNivel" class="form-label">Nível</label>
+                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                            <option selected>Menu de Opções</option>
+                            <option value="1">Amador</option>
+                            <option value="2">Profissional</option>
+                            <option value="3">Profissional em formação</option>
+                        </select>
+
+                        <label for="exampleTipo" class="form-label">Tipo de Receitas:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">Salgados</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                            <label class="form-check-label" for="radioDefault2">Doces</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
+                            <label class="form-check-label" for="radioDefault3">Salgados e Doces</label>
+                        </div>
+
+                        <label for="exampleObs" class="form-label">Informações Adicionais</label>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Observações</label>
+                        </div>
+
+                        <label for="example" class="form-label">Receitas no perfil:</label>
+                        <div class="row mb-2">
+                            <div class="col-md-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="almocos">
+                                    <label class="form-check-label" for="almocos">Pratos</label>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="lanches">
+                                    <label class="form-check-label" for="lanches">Lanches</label>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="sobremesas">
+                                    <label class="form-check-label" for="sobremesas">Sobremesas</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="fitness">
+                                    <label class="form-check-label" for="fitness">Fitness</label>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="bebidas">
+                                    <label class="form-check-label" for="bebidas">Bebidas</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label for="examplePerfil" class="form-label">Configuração do perfil</label>
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                            <label class="form-check-label" for="checkNativeSwitch">Perfil Privado</label>
+                        </div>
+                        <a type="submit" class="btn btn-primary w-100" href="index.html">Salvar</a>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

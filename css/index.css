@@ -38,6 +38,10 @@ header .icones a {
     text-decoration: none;
 }
 
+header .icones a:hover {
+    color: #9a5b54cc;
+}
+
 .nav-container {
     margin-left: 30%;
 }
@@ -52,6 +56,10 @@ header .nav-container .nav-menu a {
     margin-left: 1rem;
     text-decoration: none;
     font-weight: 600;
+}
+
+header .nav-container .nav-menu a:hover {
+    color: #9a5b54cc;
 }
 
 .main-content {
@@ -74,6 +82,10 @@ footer {
     font-weight: 500;
     font-size: 1.5rem;
     margin-left: 1rem;
+}
+
+.footer-content a:hover{
+    color: #9a5b54cc;
 }
 
 .esquerda{

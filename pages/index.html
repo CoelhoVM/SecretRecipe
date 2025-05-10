@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecretRecipe</title>
+    <title>SecretRecipe - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -19,7 +19,8 @@
 
         <header>
 
-            <nav class="navbar bg-body-tertiary fixed-top" style="display: flex; background-color: #fdf1d8 !important; padding: 1rem 1.5rem;  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);">
+            <nav class="navbar bg-body-tertiary fixed-top"
+                style="display: flex; background-color: #fdf1d8 !important; padding: 1rem 1.5rem;  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);">
 
                 <div class="container-fluid">
 
@@ -70,7 +71,7 @@
                                     <a class="nav-link" href="#">Recitas</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Cadastrar-se</a>
+                                    <a class="nav-link" href="../pages/cadastro.html">Cadastrar-se</a>
                                 </li>
                             </ul>
                         </div>
@@ -126,6 +127,7 @@
 
                     <section class="secao1">
                         <h1>Bem-vindo ao SecretRecipe</h1>
+                        <br>
 
                         <p> Em um mundo cada vez mais conectado, por que não reunir também os sabores que nos conectam?
                             O <strong>SecretRecipe</strong> nasceu da vontade de criar um espaço onde cozinheiros —
@@ -254,17 +256,63 @@
                     </section>
 
                     <section>
-                        <h1>Example heading <span class="badge rounded-pill text-bg-secondary">Secondary</span></h1>
-                        <p>Seção 3</p>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                        <h1>Chefs</h1>
+                        <br>
+
+                        <div class="row" style="justify-content: space-between; padding: 0 1rem;">
+
+                            <div class="card" style="width: 18rem; padding: 0;">
+                                <img src="../img/cheff3.jpg" alt="..."
+                                    style="height: 200px; object-fit: cover; width: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chef Luca Marini</h5>
+                                    <p class="card-text"><strong>Especialidade:</strong> Massas artesanais e
+                                        culinária
+                                        italiana tradicional.</p>
+                                    <p class="card-text"><strong>Sobre:</strong> Cresceu nas colinas da Toscana
+                                        aprendendo receitas da nonna. Acredita que cozinhar é um ato de amor e que o
+                                        segredo está no molho.</p>
+                                    <p><strong>Curiosidade:</strong> Só cozinha ouvindo ópera.</p>
+                                    <a href="#" class="btn btn-primary"
+                                        style="background-color: #9a5b54; border-color: #9a5b54;">Ver perfil</a>
+                                </div>
                             </div>
+
+                            <div class="card" style="width: 18rem; padding: 0;">
+                                <img src="../img/cheff1.jpg" class="card-img-top" alt="..."
+                                    style="height: 200px; object-fit: cover; width: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chef Aisha N'dour</h5>
+                                    <p class="card-text"><strong>Especialidade:</strong> Culinária africana
+                                        contemporânea.</p>
+                                    <p class="card-text"><strong>Sobre:</strong>Nascida no Senegal, mistura técnicas
+                                        modernas com ingredientes típicos como amendoim, quiabo e peixe fresco.</p>
+                                    <p><strong>Curiosidade:</strong> Usa especiarias como forma de contar histórias da
+                                        ancestralidade.</p>
+                                    <a href="#" class="btn btn-primary"
+                                        style="background-color: #9a5b54; border-color: #9a5b54;">Ver perfil</a>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 18rem; padding: 0;">
+                                <img src="../img/cheff2.jpg" class="card-img-top" alt="..."
+                                    style="height: 200px; object-fit: cover; width: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chef Tomás Saito</h5>
+                                    <p class="card-text"><strong>Especialidade:</strong> Comida japonesa com toque
+                                        brasileiro.</p>
+                                    <p class="card-text"><strong>Sobre:</strong>Neto de imigrantes japoneses, adora unir
+                                        tradição e tropicalidade. Suas receitas têm influência da Amazônia.</p>
+                                    <p><strong>Curiosidade:</strong> Dá nome de anime pros pratos.</p>
+                                    <a href="#" class="btn btn-primary"
+                                        style="background-color: #9a5b54; border-color: #9a5b54; margin-top: 23px;">Ver perfil</a>
+                                </div>
+                            </div>
+
                         </div>
+
+
                     </section>
 
                 </div>
@@ -328,7 +376,7 @@
                                         <h5 class="card-title">Tem uma receita incrível?</h5>
                                         <p class="card-text">Compartilhe com o mundo no SecretRecipe e inspire outros
                                             cozinheiros!</p>
-                                        <a href="#" class="btn btn-primary"
+                                        <a href="../pages/cadastro.html" class="btn btn-primary"
                                             style="background-color: #9a5b54; border-color: #9a5b54;">Cadastrar-se</a>
                                     </div>
                                 </div>
@@ -356,7 +404,7 @@
 
         </main>
 
-        <footer class="footer-content">
+        <footer class="footer-content" style="margin-top: 30px;">
 
             <div class="row">
 
