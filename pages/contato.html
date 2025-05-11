@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/sobre.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="../css/contato.css">
 </head>
 
 <body>
@@ -28,16 +29,16 @@
                         <a id="menuIcon" class="fa fa-bars"></a>
                     </button>
 
-                    <a href="index.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
+                    <a href="../pages/index.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
                             height="65%" width="65%"></a>
 
                     <div class="nav-container">
 
                         <nav class="nav-menu" id="navMenu">
-                            <a href="index.html">Home</a>
-                            <a href="sobre.html">Sobre nós</a>
-                            <a href="contato.html">Contato</a>
-                            <a href="contato.html">Receitas</a>
+                            <a href="../pages/index.html">Home</a>
+                            <a href="../pages/sobre.html">Sobre nós</a>
+                            <a href="../pages/contato.html">Contato</a>
+                            <a href="../pages/receitas.html">Receitas</a>
                         </nav>
 
                     </div>
@@ -47,8 +48,8 @@
 
                         <div class="offcanvas-header">
 
-                            <a href="../pages/index.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
-                                    height="65%" width="65%"></a>
+                            <a href="../pages/index.html" class="logo"> <img src="../img/logo2.png" alt="Logo"
+                                    class="logo-img" height="65%" width="65%"></a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
 
@@ -66,7 +67,7 @@
                                     <a class="nav-link" href="../pages/contato.html">Contato</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Recitas</a>
+                                    <a class="nav-link" href="../pages/receitas.html">Recitas</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="../pages/cadastro.html">Cadastrar-se</a>
@@ -83,11 +84,25 @@
 
             <article class="row">
 
-                <div class="col-8">
+                <div class="col-8 esquerda">
 
-                    <section>
+                    <section style="font-size: 1.1rem; text-align: justify;">
 
-                        <h1>Titulo</h1>
+                        <h1>Vamos conversar?</h1>
+                        <br>
+
+                        <p> Aqui é o espaço onde você pode falar com a gente — seja para tirar dúvidas, mandar
+                            sugestões, contar sua experiência ou até compartilhar aquela receita de família que você
+                            ama.
+                        </p>
+
+                        <p>Acreditamos que a boa comunicação é o tempero essencial de qualquer projeto, e queremos
+                            ouvir você!
+                        </p>
+
+                        <p> Preencha o formulário abaixo com suas informações e diga como podemos te ajudar. Se
+                            preferir, nos faça uma visita: estamos te esperando de portas (e panelas) abertas.
+                        </p>
 
                         <hr class="my-4" style="border: 1px solid #9a5b54;">
 
@@ -95,7 +110,51 @@
 
                     <section>
 
-                        <h1>Titulo</h1>
+                        <h1>Formulário</h1>
+                        <br>
+
+                        <form>
+
+                            <div class="mb-3">
+                                <label for="exampleInputName" class="form-label" style="font-weight: 500;">Nome
+                                    Completo</label>
+                                <input type="email" class="form-control" id="exampleInputName"
+                                    aria-describedby="nameHelp" style="width: 60%; border: 2px solid #e8beb9cc;">
+                                <div id="nameHelp" class="form-text">Queremos saber como te chamar!</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"
+                                    style="font-weight: 500;">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" style="width: 60%; border: 2px solid #e8beb9cc;">
+                                <div id="emailHelp" class="form-text">Prometemos não mandar spam — só responder
+                                    direitinho sua mensagem.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputAssunto" class="form-label"
+                                    style="font-weight: 500;">Assunto</label>
+                                <input type="email" class="form-control" id="exampleInputAssunto"
+                                    aria-describedby="assuntoHelp" style="width: 60%; border: 2px solid #e8beb9cc;">
+                                <div id="assuntoHelp" class="form-text">Diga sobre o que quer falar: dúvida, ideia,
+                                    feedback, elogio (a gente adora também!).</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputMensagem" class="form-label"
+                                    style="font-weight: 500;">Mensagem</label>
+                                <input type="email" class="form-control" id="exampleInputMensagem"
+                                    aria-describedby="mensagemHelp" style="width: 60%; border: 2px solid #e8beb9cc;">
+                                <div id="mensagemHelp" class="form-text">Agora conta tudo. Pode escrever à vontade,
+                                    estamos aqui pra ouvir.</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary"
+                                style="background-color: #9a5b54; border-color: #9a5b54;">Enviar</button>
+
+                        </form>
+
 
                         <hr class="my-4" style="border: 1px solid #9a5b54;">
 
@@ -103,7 +162,19 @@
 
                     <section>
 
-                        <h1>Titulo</h1>
+                        <h1>Venha nos visitar</h1>
+                        <br>
+
+                        <p> Aqui embaixo você encontra nossa localização. Se quiser nos visitar, será super bem-vindo —
+                            pode vir pra tomar um café, bater um papo ou conversar sobre gastronomia e cultura.
+                        </p>
+
+                        <div id="map" style="height: 400px; width: 100%;">
+
+
+
+                        </div>
+
 
                         <hr class="my-4" style="border: 1px solid #9a5b54;">
 
@@ -113,9 +184,21 @@
 
                 <div class="col-4 direita">
 
-                    <aside>
+                    <aside style="font-size: 1.1rem; text-align: justify;">
 
-                        <h1>Titulo</h1>
+                        <h1>Redes sociais</h1>
+                        <br>
+                        <p> Acompanhe nossas redes sociais e fique por dentro de tudo que rola no nosso site e na
+                            nossa cozinha.
+                        </p>
+                        <p> Estamos sempre postando novidades, dicas e receitas incríveis. Não fique de fora!</p>
+
+
+                        <div class="redes-sociais">
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                        </div>
 
                         <hr class="my-4" style="border: 1px solid #9a5b54;">
 
@@ -123,9 +206,33 @@
 
                     <aside>
 
-                        <h1>Titulo</h1>
+                        <div class="row">
 
-                        <hr class="my-4" style="border: 1px solid #9a5b54;">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tem uma receita incrível?</h5>
+                                        <p class="card-text">Compartilhe com o mundo no SecretRecipe e inspire outros
+                                            cozinheiros!</p>
+                                        <a href="../pages/cadastro.html" class="btn btn-primary"
+                                            style="background-color: #9a5b54; border-color: #9a5b54;">Cadastrar-se</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Descubra uma receita aleatória!</h5>
+                                        <p class="card-text">Sinta o gostinho da aventura culinária com uma receita
+                                            surpresa escolhida só pra você.</p>
+                                        <a href="#" class="btn btn-primary"
+                                            style="background-color: #9a5b54; border-color: #9a5b54;">Me surpreenda</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </aside>
 
@@ -150,7 +257,7 @@
 
                 <div class="col-4">
 
-                    <nav class="nav-footer" id="nav-footer">
+                    <nav class="nav-footer2" id="nav-footer">
                         <text>Siga-nos:</text>
                         <a href="#" class="fab fa-instagram"></a>
                         <a href="#" class="fab fa-facebook"></a>
@@ -168,6 +275,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <script>
+
+        var map = L.map('map').setView([-27.137539, -52.5990], 19);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([-27.137539, -52.5990]).addTo(map)
+            .bindPopup('Estamos aqui!')
+            .openPopup();
+
+    </script>
 
 </body>
 

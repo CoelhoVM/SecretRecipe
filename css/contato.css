@@ -35,7 +35,7 @@ header .icones a:hover {
     margin-left: 30%;
 }
 
-.nav-menu{
+.nav-menu {
     margin-right: 15px;
 }
 
@@ -56,7 +56,8 @@ footer {
     padding: 1.5rem;
 }
 
-.footer-content a, text{
+.footer-content a,
+text {
     text-decoration: none;
     color: #9a5b54;
     font-weight: 500;
@@ -64,10 +65,40 @@ footer {
     margin-left: 1rem;
 }
 
-.footer-content a:hover{
+.footer-content a:hover {
     color: #9a5b54cc;
 }
 
 .logo {
     margin-top: 1rem;
+}
+
+.main-content {
+    padding: 2rem 2rem 0 2rem;
+    margin-top: -55px;
+}
+
+.esquerda {
+    padding: 2rem;
+}
+
+.direita {
+    padding: 2rem;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #9a5b54;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-top: 5px;
+}
+
+.redes-sociais a:hover {
+    color: #9a5b54cc;
+}
+
+.nav-footer2 {
+    margin-left: 210px;
 }
