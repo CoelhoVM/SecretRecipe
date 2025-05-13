@@ -4,272 +4,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecretRecipe - SobreNos</title>
+    <title>SecretRecipe - Sobre Nós</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/sobre.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+
 </head>
 
 <body>
 
-    <div>
+    <header>
 
-        <header>
+        <nav class="navbar bg-body-tertiary fixed-top"
+            style="display: flex; background-color: #fdf1d8 !important; padding: 1rem 1.5rem;  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);">
 
-            <nav class="navbar bg-body-tertiary fixed-top"
-                style="display: flex; background-color: #fdf1d8 !important; padding: 1rem 1.5rem;  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);">
+            <div class="container-fluid">
 
-                <div class="container-fluid">
+                <button class="icones" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: #fdf1d8;">
+                    <a id="menuIcon" class="fa fa-bars"></a>
+                </button>
 
-                    <button class="icones" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
-                        style="background-color: #fdf1d8;">
-                        <a id="menuIcon" class="fa fa-bars"></a>
-                    </button>
+                <a href="../index.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
+                        height="65%" width="65%"></a>
 
-                    <a href="../pages/index.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
-                            height="65%" width="65%"></a>
+                <div class="nav-container">
 
-                    <div class="nav-container">
+                    <nav class="nav-menu" id="navMenu">
+                        <a href="../index.html">Home</a>
+                        <a href="../pages/sobre.html">Sobre nós</a>
+                        <a href="../pages/contato.html">Contato</a>
+                        <a href="../pages/receitas.html">Receitas</a>
+                    </nav>
 
-                        <nav class="nav-menu" id="navMenu">
-                            <a href="../pages/index.html">Home</a>
-                            <a href="../pages/sobre.html">Sobre nós</a>
-                            <a href="../pages/contato.html">Contato</a>
-                            <a href="../pages/receitas.html">Receitas</a>
-                        </nav>
-
-                    </div>
-
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-
-                        <div class="offcanvas-header">
-
-                            <a href="../pages/index.html" class="logo"> <img src="../img/logo2.png" alt="Logo"
-                                    class="logo-img" height="65%" width="65%"></a>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-
-                        </div>
-
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../pages/index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/sobre.html">Sobre nós</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/contato.html">Contato</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/receitas.html">Recitas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/cadastro.html">Cadastrar-se</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
                 </div>
-            </nav>
-        </header>
 
-        <main class="main-content" style="margin-top: 100px;">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
 
-            <article class="row">
+                    <div class="offcanvas-header">
 
-                <div class="col-8">
+                        <a href="../index.html" class="logo"> <img src="../img/logo2.png" alt="Logo"
+                                class="logo-img" height="65%" width="65%"></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
-                    <section>
+                    </div>
 
-                        <section class="secao1" style="font-size: 1.1rem; text-align: justify;">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/sobre.html">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contato.html">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/receitas.html">Recitas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/cadastro.html">Cadastrar-se</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                            <img src="../img/pessoascozinhando.jpg" class="card-img-top" alt="..."
-                                style="height: 480px; object-fit: cover; width: 800px">
-                            <p></p>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-                        </section>
-                        <h1>Nossa Missão</h1>
-                        <hr class="my-4" style="border: 1px solid #9a5b54;">
-                        <p> Hoje, seguimos com o mesmo propósito que nos uniu no início: espalhar amor através da
-                            comida, inspirar pessoas a cozinharem com prazer e compartilharem suas melhores receitas de
-                            família, sejam pratos elaborados ou aquele tradicional arroz com feijão.
-                        </p>
-                        <p>
-                            <em>Compartilhar receitas é uma prática simples e acessível de aproximar as pessoas.</em>
-                        </p>
+    <div style="padding: 0 3rem 0 3rem; margin-top: 150px;">
+        <hr class="my-4" style="border: 1px solid #9a5b54;">
+    </div>
 
+    <main class="main-content" >
 
-                    </section>
-                    
+        <article class="row">
+
+            <div class="col-8 esquerda">
+
+                <section class="secao1" style="font-size: 1.1rem; text-align: justify;">
+
+                    <h1>Nossa História</h1>
+
                     <br>
-                    <section>
 
-                        <h1>Quem Somos</h1>
-                        <hr class="my-4" style="border: 1px solid #9a5b54;">
-                        <p>Nos bastidores do nosso site de receitas, estão duas mulheres apaixonadas por conexões
-                            humanas, boas histórias e experiências compartilhadas <br> à mesa — mesmo sem formação na
-                            cozinha.</p>
+                    <h4>Compartilhando sabores, histórias e tradições culinárias desde 2020.</h4>
 
-                        <div class="row" style="justify-content: space-between; padding: 0 1rem;">
+                    <br>
 
-                            <div class="card" style="width: 18rem; padding: 0;">
-                                <img src="../img/mulherVitorya.jpg" alt="..."
-                                    style="height: 200px; object-fit: cover; width: 100%;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Vitórya Miranda Coelho</h5>
-                                    <p class="card-text"><strong>Fundadora e Diretora Criativa</strong> </p>
-                                    <p class="card-text"><strong>Sobre:</strong> Formada em Sistemas de informações,
-                                        Vitórya sempre
-                                        acreditou no poder da comida como meio de afeto e expressão cultural.
-                                        Em 2020, decidiu transformar um espaço onde qualquer pessoa pudesse encontrar
-                                        inspiração para cozinhar, comer bem e se
-                                        sentir acolhida.
-                                    <p><em> Foi assim que nasceu o site.</em></p>
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        style="background-color: #9a5b54; border-color: #9a5b54;">Saber mais</a>
-                                </div>
+                    <p> Tudo começou com cadernos de receitas da nossa avó e uma vontade imensa de dividir
+                        memórias com sabor. Em meio a panelas, cheiros e lembranças, percebemos que a cozinha é
+                        mais do que um lugar para preparar comida — é onde as histórias ganham gosto, e os laços
+                        se fortalecem.
+                    </p>
+
+                    <p> O site nasceu como um blog simples entre amigos e familiares, mas rapidamente conquistou
+                        espaço entre apaixonados pela culinária caseira. Ao longo do tempo, criamos uma
+                        comunidade que compartilha, aprende
+                        e cresce junto.
+                    </p>
+
+                    <p> Hoje, seguimos com o mesmo propósito que nos uniu no início: espalhar amor através da
+                        comida e inspirar pessoas a cozinharem com prazer, seja com pratos elaborados ou com
+                        aquele arroz com feijão de todo dia.
+
+                    </p>
+
+                    <p>
+                        <em>Então, prepara os ingredientes, liga o forno e vem com a gente nessa jornada
+                            saborosa.</em>
+                    </p>
+
+                    <hr class="my-4" style="border: 1px solid #9a5b54;">
+
+                </section>
+
+                <section style="font-size: 1.1rem; text-align: justify;">
+
+                    <h1>Quem Somos</h1>
+
+                    <br>
+
+                    <p>Nos bastidores do nosso site de receitas, estão duas mulheres apaixonadas por conexões
+                        humanas, boas histórias e experiências compartilhadas à mesa — mesmo sem formação na
+                        cozinha.</p>
+
+                    <br>
+
+                    <div class="row" style="justify-content: space-between; padding: 0 1rem;">
+
+                        <div class="card" style="width: 18rem; padding: 0;">
+
+                            <img src="../img/mulherVitorya.jpg" alt="..."
+                                style="height: 200px; object-fit: cover; width: 100%;">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Vitórya Miranda Coelho</h5>
+                                <p class="card-text"><strong>Fundadora e Diretora Criativa</strong></p>
+
+                                <p class="card-text"><strong>Sobre:</strong> Formada em Sistemas de informações,
+                                    Vitórya sempre
+                                    acreditou no poder da comida como meio de afeto e expressão cultural.
+                                    Em 2020, decidiu transformar um espaço onde qualquer pessoa pudesse
+                                    encontrar
+                                    inspiração para cozinhar, comer bem e se
+                                    sentir acolhida.
+                                </p>
+
+                                <a href="#" class="btn btn-primary"
+                                    style="background-color: #9a5b54; border-color: #9a5b54;">Saber mais</a>
                             </div>
-
-                            <div class="card" style="width: 18rem; padding: 0;">
-                                <img src="../img/mulherFlavia.avif" class="card-img-top" alt="..."
-                                    style="height: 200px; object-fit: cover; width: 100%;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Flavia Regina Madri</h5>
-                                    <p class="card-text"><strong>Co-fundadora de Estratégia</strong></p>
-                                    <p class="card-text"><strong>Sobre:</strong> Com formação em tecnologia da
-                                        informação e gestão de
-                                        projetos, Flavia entrou como sócia para tirar as ideias do papel e auxiliar na
-                                        construção do site. Curiosa por natureza, ela viu no projeto uma forma de unir
-                                        tecnologia, propósito e
-                                        impacto real na vida das pessoas.</p>
-                                    <a href="#" class="btn btn-primary"
-                                        style="background-color: #9a5b54; border-color: #9a5b54;">Saber mais</a>
-                                </div>
-                            </div>
-
-                            <div class="card" style="width: 18rem; padding: 0;">
-                                <img src="../img/HomemFoto.avif" class="card-img-top" alt="..."
-                                    style="height: 200px; object-fit: cover; width: 100%;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Ricardo Almeida</h5>
-                                    <p class="card-text"><strong>Colaborador</strong></p>
-                                    <p class="card-text"><strong>Sobre:</strong> Inspirador cozinheiro
-                                        autodidata, Ricardo sempre acreditou que a comida é uma forma de ensinar,
-                                        acolher e construir memórias. Foi através de suas
-                                        histórias de receitas passadas de geração em geração que Vitorya e Flavia se
-                                        encantaram pelo valor humano da culinária. E foi o que deu origem a
-                                        este projeto. </p>
-                                    <a href="#" class="btn btn-primary"
-                                        style="background-color: #9a5b54; border-color: #9a5b54;">Saber mais</a>
-                                </div>
-                            </div>
-
                         </div>
 
+                        <div class="card" style="width: 18rem; padding: 0;">
 
-                        <hr class="my-4" style="border: 1px solid #9a5b54;">
+                            <img src="../img/mulherFlavia.avif" alt="..."
+                                style="height: 200px; object-fit: cover; width: 100%;">
 
-                    </section>
+                            <div class="card-body">
+                                <h5 class="card-title">Flavia Regina Madri</h5>
+                                <p class="card-text"><strong>Co-fundadora de Estratégia</strong></p>
 
-                    <section>
+                                <p class="card-text"><strong>Sobre:</strong> Com formação em tecnologia da
+                                    informação e gestão de projetos, Flavia entrou como sócia para tirar as ideias
+                                    do papel e auxiliar
+                                    na construção do site. Curiosa por natureza, ela viu no projeto uma forma de
+                                    unir tecnologia, propósito e impacto real na vida das pessoas.
+                                </p>
 
-                        <h1>Titulo 2</h1>
+                                <a href="#" class="btn btn-primary"
+                                    style="background-color: #9a5b54; border-color: #9a5b54;">Saber mais</a>
+                            </div>
+                        </div>
 
-                        <hr class="my-4" style="border: 1px solid #9a5b54;">
+                        <div class="card" style="width: 18rem; padding: 0;">
 
-                    </section>
+                            <img src="../img/HomemFoto.avif" alt="..."
+                                style="height: 200px; object-fit: cover; width: 100%;">
 
-                </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Ricardo Almeida</h5>
+                                <p class="card-text"><strong>Colaborador</strong></p>
 
-                <div class="col-4 direita">
+                                <p class="card-text"><strong>Sobre:</strong> Inspirador cozinheiro
+                                    autodidata, Ricardo sempre acreditou que a comida é uma forma de ensinar,
+                                    acolher e construir memórias. Foi através de suas
+                                    histórias de receitas passadas de geração em geração que Vitorya e Flavia se
+                                    encantaram pelo valor humano da culinária. E foi o que deu origem a
+                                    este projeto.
+                                </p>
 
-                    <aside>
+                                <a href="#" class="btn btn-primary"
+                                    style="background-color: #9a5b54; border-color: #9a5b54;">Saber mais</a>
+                            </div>
+                        </div>
 
-                        <h1>Nossa História</h1>
+                    </div>
 
-                        <hr class="my-4" style="border: 1px solid #9a5b54;">
-                        <h4>Compartilhando sabores, histórias e tradições culinárias desde 2020.</h4>
-                        <br>
-
-                        <p>Tudo começou com cadernos de receitas da nossa avó e uma vontade imensa de dividir
-                            memórias com sabor. Em meio a panelas, cheiros e lembranças, percebemos que a cozinha é
-                            mais do que um lugar para preparar comida — é onde as histórias ganham gosto, e os laços
-                            se fortalecem.
-                        </p>
-
-                        <p> O site nasceu como um blog simples entre amigos e familiares, mas rapidamente conquistou
-                            espaço entre apaixonados pela culinária caseira. Ao longo do tempo, criamos uma
-                            comunidade que compartilha, aprende
-                            e cresce junto.
-                        </p>
-
-                        <p>Hoje, seguimos com o mesmo propósito que nos uniu no início: espalhar amor através da
-                            comida e inspirar pessoas a cozinharem com prazer, seja com pratos elaborados ou com
-                            aquele arroz com feijão de todo dia.
-                        </p>
-
-                        <p>
-                            <em>Então, prepara os ingredientes, liga o forno e vem com a gente nessa jornada
-                                saborosa.</em>
-                        </p>
-
-
-                    </aside>
-
-                    <aside>
-
-                        <h1>Titulo 4</h1>
-
-                        <hr class="my-4" style="border: 1px solid #9a5b54;">
-
-                    </aside>
-
-                </div>
-
-            </article>
-
-        </main>
-
-        <footer class="footer-content" style="margin-top: 30px;">
-
-            <div class="row">
-
-                <div class="col">
-
-                    <nav class="nav-footer" id="nav-footer">
-                        <a href="#">Trabalhe conosco</a>
-                        <a href="contato.html">Contato</a>
-                    </nav>
-
-                </div>
-
-                <div class="col-4">
-
-                    <nav class="nav-footer2" id="nav-footer">
-                        <text>Siga-nos:</text>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-facebook"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                    </nav>
-
-                </div>
+                </section>
 
             </div>
 
-        </footer>
+            <div class="col-4 direita">
 
-    </div>
+                <aside>
+
+                    <h2>Nossa Missão</h2>
+                    <br>
+
+                    <p> Hoje, seguimos com o mesmo propósito que nos uniu no início: espalhar amor através da
+                        comida, inspirar pessoas a cozinharem com prazer e compartilharem suas melhores receitas de
+                        família, sejam pratos elaborados ou aquele tradicional arroz com feijão.
+                    </p>
+
+                    <p>
+                        <em>Compartilhar receitas é uma prática simples e acessível de aproximar as pessoas.</em>
+                    </p>
+
+
+                </aside>
+
+                <aside>
+
+                    <hr class="my-4" style="border: 1px solid #9a5b54;">
+                    <h1>Comentários</h1>
+
+                    <h4 class="mb-4">Faça seu comentário</h4>
+
+                    <form id="formulario" class="rounded-2 bg-white ">
+
+                        <div class="mb-3">
+                            <label for="inputName" class="form-label">Nome ou email</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputText" class="form-label">No que está pensando?</label>
+                            <textarea class="form-control" id="inputText" placeholder="Comente algo..."
+                                required></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-primary px-4" style="background-color: #9a5b54; border-color: #9a5b54;">Comentar</button>
+                        </div>
+
+                        <hr class="my-4" style="border: 1px solid #9a5b54;">
+
+                    </form>
+
+                </aside>
+
+                <aside>
+
+                    <h4 class="mb-3">Comentários</h4>
+
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg><strong> Vinicius Guilherme Marcante:</strong><br> Adoro esse site! As
+                        pessoas explicam bem as receitas e quando eu faço sempre dão certas.</p>
+
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg><strong> Julia Dos Santos:</strong><br> Encontrei aqui pratos incríveis
+                        que viraram tradição na minha casa</p>
+
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg><strong> Marcela Zorzi:</strong><br>Site perfeito para quem ama cozinhar.
+                        Simples, prático e cheio de sabor!</p>
+
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg><strong> Pedro Antônio Ghelher:</strong><br> Me surpreendi com a variedade
+                        de receitas! Tem opções para todos os gostos!</p>
+
+                </aside>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer class="footer-content" style="margin-top: 30px;">
+
+        <div class="row">
+
+            <div class="col">
+
+                <nav class="nav-footer" id="nav-footer">
+                    <a href="#">Trabalhe conosco</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+
+            </div>
+
+            <div class="col-4">
+
+                <nav class="nav-footer2" id="nav-footer">
+                    <text>Siga-nos:</text>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+
 
 </body>
 

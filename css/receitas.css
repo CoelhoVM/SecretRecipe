@@ -72,6 +72,19 @@ footer {
     margin-top: 1rem;
 }
 
+.main-content {
+    padding: 2rem 2rem 0 2rem;
+    margin-top: -55px;
+}
+
 .nav-footer2 {
     margin-left: 210px;
+}
+
+.esquerda{
+    padding: 2rem;
+}
+
+.direita{
+    padding: 2rem;
 }

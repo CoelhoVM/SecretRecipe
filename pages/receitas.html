@@ -1,142 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecretRecipe - Cadastro</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecretRecipe - Receitas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/receitas.css">
-
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/sobre.css" />
 </head>
 
 <body>
 
-    <div>
+    <header>
 
-        <header>
+        <nav class="navbar bg-body-tertiary fixed-top"
+            style="display: flex; background-color: #fdf1d8 !important; padding: 1rem 1.5rem;  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);">
 
-            <nav class="navbar bg-body-tertiary fixed-top"
-                style="display: flex; background-color: #fdf1d8 !important; padding: 1rem 1.5rem;  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);">
+            <div class="container-fluid">
 
-                <div class="container-fluid">
+                <button class="icones" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: #fdf1d8;">
+                    <a id="menuIcon" class="fa fa-bars"></a>
+                </button>
 
-                    <button class="icones" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
-                        style="background-color: #fdf1d8;">
-                        <a id="menuIcon" class="fa fa-bars"></a>
-                    </button>
+                <a href="../index.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
+                        height="65%" width="65%"></a>
 
-                    <a href="../pages/receitas.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
-                            height="65%" width="65%"></a>
+                <div class="nav-container">
 
-                    <div class="nav-container">
+                    <nav class="nav-menu" id="navMenu">
+                        <a href="../index.html">Home</a>
+                        <a href="../pages/sobre.html">Sobre nós</a>
+                        <a href="../pages/contato.html">Contato</a>
+                        <a href="../pages/receitas.html">Receitas</a>
+                    </nav>
 
-                        <nav class="nav-menu" id="navMenu">
-                            <a href="../pages/index.html">Home</a>
-                            <a href="../pages/sobre.html">Sobre nós</a>
-                            <a href="../pages/contato.html">Contato</a>
-                            <a href="../pages/receitas.html">Receitas</a>
-                        </nav>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header">
+
+                        <a href="../index.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
+                                height="65%" width="65%"></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
                     </div>
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/sobre.html">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contato.html">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/receitas.html">Recitas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/cadastro.html">Cadastrar-se</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <div class="offcanvas-header">
+                </div>
+            </div>
+        </nav>
+    </header>
 
-                            <a href="index.html" class="logo"> <img src="../img/logo2.png" alt="Logo" class="logo-img"
-                                    height="65%" width="65%"></a>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+    <main class="main-content" style="margin-top: 100px;">
 
+        <article class="row">
+
+            <section class="col-4">
+
+                <div style="max-width: 500px;">
+
+                    <div class="card mb-3">
+                        <a href="#"><img src="../img/fricasse.avif" class="card-img-top" alt="Fricassê"
+                                style="height: 250px; object-fit: cover;"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Fricassê de Frango</h5>
+                            <p class="card-text">Combinando pedaços suculentos de frango, um creme saboroso e
+                                ingredientes como milho e requeijão, esse prato é uma explosão de sabores.</p>
+                            <a href="#">Ver receita completa</a>
                         </div>
+                    </div>
 
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Sobre nós</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contato</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Recitas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/cadastro.html">Cadastrar-se</a>
-                                </li>
-                            </ul>
+                    <div class="card mb-3">
+                        <a href="#"><img src="../img/panquecaamericana.jpg" class="card-img-top"
+                                alt="Panqueca Americana" style="height: 250px; object-fit: cover;"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Panqueca Americana</h5>
+                            <p class="card-text">Essa panqueca doce vai deixar todo mundo querendo mais! Pode ser
+                                servida com mel, geleia, frutas ou iogurte.</p>
+                            <a href="#">Ver receita completa</a>
                         </div>
+                    </div>
 
+                    <a href="#" class="btn btn-primary"
+                        style="background-color: #9a5b54; border-color: #9a5b54;">Carregar mais receitas</a>
+                </div>
+
+            </section>
+
+            <section class="col-4">
+
+                <div style="max-width: 500px;">
+
+                    <div class="card mb-3">
+                        <a href="#"><img src="../img/mousselimao.jpg" class="card-img-top" alt="Mousse de Limão"
+                                style="height: 250px; object-fit: cover;"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Mousse de Limão</h5>
+                            <p class="card-text">Leite condensado, creme de leite e suco de limão formam esse mousse
+                                cremoso e refrescante.</p>
+                            <a href="#">Ver receita completa</a>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <a href="#"><img src="../img/molho.jpg" class="card-img-top" alt="Molho de Tomate Caseiro"
+                                style="height: 250px; object-fit: cover;"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Molho de Tomate Caseiro</h5>
+                            <p class="card-text">Mais saudável e saboroso que os industrializados, ideal para ter sempre
+                                congelado.</p>
+                            <a href="#">Ver receita completa</a>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </header>
 
-        <div class="d-flex justify-content-center align-items-center min-vh-100 bg-light" style="margin-top: 100px;">
-            <form>
-                <div class="container">
-                    <div class="mx-auto bg-white p-4 rounded shadow" style="width: 750px;">
+            </section>
 
+            <div class="col-4">
 
-                        <label for="exampleTitulo" class="form-label">
-                            <label class="form-label fw-bold">Adicionar Receita</label>
-                        </label><br>
+                <aside>
 
-                        <div class="mb-3">
-                            <label for="exampleTitle" class="form-label">Título:</label>
-                            <div class="input-group mb-2">
-                                <input type="text" class="form-control">
-                            </div>
-                            <p></p>
-                            <label for="exampleTipo" class="form-label">Tipo de Receita:</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                                <label class="form-check-label" for="radioDefault1">Salgado</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2"
-                                    checked>
-                                <label class="form-check-label" for="radioDefault2">Doce</label>
-                            </div>
-                            <div class="form-check ">
-                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
-                                <label class="form-check-label" for="radioDefault3">Bebida</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2"
-                                    checked>
-                                <label class="form-check-label" for="radioDefault2">Fitness</label>
-                            </div>
-                            <p></p>
+                    <form>
+
+                        <div class="mx-auto bg-white p-4 rounded shadow" style="width: 485px;">
+
+                            <h3>Adicionar Receita</h3>
+                            <hr class="my-4" style="border: 1px solid #9a5b54;">
+
                             <div class="mb-3">
-                                <label for="exampleIngrediente" class="form-label">Ingredientes:</label>
-                                <div class="input-group mb-2">
-                                    <input type="text" class="form-control" placeholder="Ingrediente 1">
-                                </div>
-                                <div class="input-group mb-2">
-                                    <input type="text" class="form-control" placeholder="Ingrediente 2">
-                                </div>
-                                <div class="input-group mb-2">
-                                    <input type="text" class="form-control" placeholder="Ingrediente 3">
-                                </div>
-                                <div class="input-group mb-2">
-                                    <input type="text" class="form-control" placeholder="Ingrediente 4">
-                                </div>
+                                <label class="form-label">Título:</label>
+                                <input type="text" class="form-control" />
+                            </div>
+
+                            <label class="form-label">Tipo de Receita:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoReceita" id="salgado">
+                                <label class="form-check-label" for="salgado">Salgado</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoReceita" id="doce" checked>
+                                <label class="form-check-label" for="doce">Doce</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoReceita" id="bebida">
+                                <label class="form-check-label" for="bebida">Bebida</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoReceita" id="fitness">
+                                <label class="form-check-label" for="fitness">Fitness</label>
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label class="form-label">Ingredientes:</label>
+                                <input type="text" class="form-control mb-2" placeholder="Ingrediente 1" />
+                                <input type="text" class="form-control mb-2" placeholder="Ingrediente 2" />
+                                <input type="text" class="form-control mb-2" placeholder="Ingrediente 3" />
+                                <input type="text" class="form-control mb-2" placeholder="Ingrediente 4" />
                             </div>
 
                             <label for="exampleObs" class="form-label">Tempo de preparo:</label>
                             <div class="input-group mb-2">
                                 <input type="text" class="form-control">
                             </div>
-                            <p></p>
 
                             <label for="exampleObs" class="form-label">Informações Adicionais</label>
                             <div class="form-floating mb-3">
@@ -153,14 +202,21 @@
                                     <p class="mt-2">Envie uma imagem</p>
                                 </div>
                             </div>
-                            <a type="submit" class="btn btn-primary w-100" href="index.html">Adicionar</a>
+
+                            <a type="submit" class="btn btn-primary w-100" href="#"
+                                style="background-color: #9a5b54; border-color: #9a5b54;">Adicionar</a>
 
                         </div>
-                    </div>
 
-            </form>
-        </div>
-    </div>
+                    </form>
+
+                </aside>
+
+            </div>
+
+        </article>
+
+    </main>
 
     <footer class="footer-content" style="margin-top: 30px;">
 
@@ -170,7 +226,7 @@
 
                 <nav class="nav-footer" id="nav-footer">
                     <a href="#">Trabalhe conosco</a>
-                    <a href="contato.html">Contato</a>
+                    <a href="../SecretRecipe/pages/contato.html">Contato</a>
                 </nav>
 
             </div>
